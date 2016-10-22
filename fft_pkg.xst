@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Srivatsan/Desktop/4051/Project/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Srivatsan/Desktop/4051/Project/xst"
+elaborate
+-ifn fft_pkg.prj
+-ifmt mixed

@@ -1,0 +1,5 @@
+vhdl work "C:\Users\Srivatsan\Desktop\4051\Project\fft_pkg.vhd"
+vhdl work "C:\Users\Srivatsan\Desktop\4051\Project\sub.vhd"
+vhdl work "C:\Users\Srivatsan\Desktop\4051\Project\add_16.vhd"
+vhdl work "C:\Users\Srivatsan\Desktop\4051\Project\radix_2_butterfly.vhd"
+vhdl work "C:\Users\Srivatsan\Desktop\4051\Project\fft_8_point.vhd"

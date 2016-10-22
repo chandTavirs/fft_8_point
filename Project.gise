@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Project.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="add_16.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="add_16.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="add_16.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="add_16.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="fft_8_point.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="fft_8_point.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="fft_8_point.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="fft_8_point.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="fft_8_point.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="fft_8_point.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fft_8_point.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="fft_8_point.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="fft_8_point.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="fft_8_point.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="fft_8_point_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="fft_8_point_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="fft_8_point_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fft_8_point_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="fft_8_point_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fft_8_point_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fft_8_point_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fft_8_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fft_pkg.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="fft_pkg.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="fft_pkg.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fft_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="fft_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="fft_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fft_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="radix_2_butterfly.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="radix_2_butterfly.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="radix_2_butterfly.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="radix_2_butterfly.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="radix_2_butterfly.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="radix_2_butterfly.spl"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="radix_2_butterfly.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="radix_2_butterfly.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="radix_2_butterfly.syr"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="radix_2_butterfly.vhi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="radix_2_butterfly.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="radix_2_butterfly_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="radix_2_butterfly_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="radix_2_butterfly_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="radix_2_butterfly_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sub.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="sub.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="sub.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="sub.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1477149894" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1477149894">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477151099" xil_pn:in_ck="7991101219478490996" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477151099">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="add_16.vhd"/>
+      <outfile xil_pn:name="fft_8_point.vhd"/>
+      <outfile xil_pn:name="fft_8_tb.vhd"/>
+      <outfile xil_pn:name="fft_pkg.vhd"/>
+      <outfile xil_pn:name="fft_tb.vhd"/>
+      <outfile xil_pn:name="radix_2_butterfly.vhd"/>
+      <outfile xil_pn:name="sub.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1477149894" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9123201519437658741" xil_pn:start_ts="1477149894">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477149894" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7412279867257046855" xil_pn:start_ts="1477149894">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477149894" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6476508426934883015" xil_pn:start_ts="1477149894">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477151099" xil_pn:in_ck="7991101219478490996" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477151099">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="add_16.vhd"/>
+      <outfile xil_pn:name="fft_8_point.vhd"/>
+      <outfile xil_pn:name="fft_8_tb.vhd"/>
+      <outfile xil_pn:name="fft_pkg.vhd"/>
+      <outfile xil_pn:name="fft_tb.vhd"/>
+      <outfile xil_pn:name="radix_2_butterfly.vhd"/>
+      <outfile xil_pn:name="sub.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1477151102" xil_pn:in_ck="7991101219478490996" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1165357421435030530" xil_pn:start_ts="1477151099">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="fft_tb_beh.prj"/>
+      <outfile xil_pn:name="fft_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1477151102" xil_pn:in_ck="-4140855696724741852" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2829756724318435755" xil_pn:start_ts="1477151102">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="fft_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1477036897" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1477036897">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477129673" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8970337487302621713" xil_pn:start_ts="1477129673">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477129673" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6476508426934883015" xil_pn:start_ts="1477129673">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477036897" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1477036897">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477129673" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4109502186540752291" xil_pn:start_ts="1477129673">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477036897" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="9113450265161349581" xil_pn:start_ts="1477036897">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477129673" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="1032237925171209489" xil_pn:start_ts="1477129673">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477151032" xil_pn:in_ck="-4779201691123099117" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="-8093513031483721457" xil_pn:start_ts="1477151014">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="fft_8_point.lso"/>
+      <outfile xil_pn:name="fft_8_point.ngc"/>
+      <outfile xil_pn:name="fft_8_point.ngr"/>
+      <outfile xil_pn:name="fft_8_point.prj"/>
+      <outfile xil_pn:name="fft_8_point.stx"/>
+      <outfile xil_pn:name="fft_8_point.syr"/>
+      <outfile xil_pn:name="fft_8_point.xst"/>
+      <outfile xil_pn:name="fft_8_point_vhdl.prj"/>
+      <outfile xil_pn:name="fft_8_point_xst.xrpt"/>
+      <outfile xil_pn:name="radix_2_butterfly.ngr"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1477143219" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1631388153759617928" xil_pn:start_ts="1477143219">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477143224" xil_pn:in_ck="-3979645858350852715" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8113104349645786458" xil_pn:start_ts="1477143219">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="fft_8_point.bld"/>
+      <outfile xil_pn:name="fft_8_point.ngd"/>
+      <outfile xil_pn:name="fft_8_point_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1477143226" xil_pn:in_ck="6939557551879322567" xil_pn:name="TRANEXT_map_virtex5" xil_pn:prop_ck="-3560446297043170381" xil_pn:start_ts="1477143224">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="fft_8_point_map.map"/>
+      <outfile xil_pn:name="fft_8_point_map.mrp"/>
+    </transform>
+  </transforms>
+
+</generated_project>

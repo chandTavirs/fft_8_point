@@ -1,0 +1,37 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'fft_8_point'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc5vfx70t-ff1136-1 -w -logic_opt off -ol
+high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr
+off -lc off -power off -o fft_8_point_map.ncd fft_8_point.ngd fft_8_point.pcf 
+Target Device  : xc5vfx70t
+Target Package : ff1136
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Sat Oct 22 21:33:44 2016
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   0
+
+Section 1 - Errors
+------------------
+ERROR:Security:12 - No 'xc5vfx70t' feature version 2013.10 was available (-5),
+ERROR:Map:258 - A problem was encountered attempting to get the license for this
+   architecture. 
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:9b - No 'ISE' feature version 2013.10 was available for part
+'xc5vfx70t'.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:56 - Part 'xc5vfx70t' is not a WebPack part.
+INFO:Security:61 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:63 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:68 - For more information or for assistance in obtaining 
+INFO:Security:68a - user is Srivatsan, on host MSI.

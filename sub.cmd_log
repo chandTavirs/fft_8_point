@@ -1,0 +1,1 @@
+vhdtdtfi -prj Project -o C:/Users/Srivatsan/Desktop/4051/Project/sub.vhi -module sub -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work fft_pkg.vhd -lib work sub.vhd 

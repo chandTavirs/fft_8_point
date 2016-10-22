@@ -1,0 +1,31 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Srivatsan/Desktop/4051/Project/fft_tb_isim_beh.exe -prj C:/Users/Srivatsan/Desktop/4051/Project/fft_tb_beh.prj work.fft_tb 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Srivatsan/Desktop/4051/Project/fft_pkg.vhd" into library work
+Parsing VHDL file "C:/Users/Srivatsan/Desktop/4051/Project/sub.vhd" into library work
+Parsing VHDL file "C:/Users/Srivatsan/Desktop/4051/Project/add_16.vhd" into library work
+Parsing VHDL file "C:/Users/Srivatsan/Desktop/4051/Project/radix_2_butterfly.vhd" into library work
+Parsing VHDL file "C:/Users/Srivatsan/Desktop/4051/Project/fft_8_point.vhd" into library work
+Parsing VHDL file "C:/Users/Srivatsan/Desktop/4051/Project/fft_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 162608 KB
+Fuse CPU Usage: 186 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_signed
+Compiling package fft_pkg
+Compiling architecture behavioral of entity add_16 [add_16_default]
+Compiling architecture behavioral of entity sub [sub_default]
+Compiling architecture behavioral of entity radix_2_butterfly [radix_2_butterfly_default]
+Compiling architecture behavioral of entity fft_8_point [fft_8_point_default]
+Compiling architecture behavior of entity fft_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 14 VHDL Units
+Built simulation executable C:/Users/Srivatsan/Desktop/4051/Project/fft_tb_isim_beh.exe
+Fuse Memory Usage: 182936 KB
+Fuse CPU Usage: 327 ms
