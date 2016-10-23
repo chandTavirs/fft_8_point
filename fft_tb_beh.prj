@@ -1,6 +1,8 @@
 vhdl work "fft_pkg.vhd"
 vhdl work "sub.vhd"
 vhdl work "add_16.vhd"
+vhdl work "../../../../../Xilinx/14.7/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_float_types_c.vhd"
 vhdl work "radix_2_butterfly.vhd"
+vhdl work "../../../../../Xilinx/14.7/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_pkg_c.vhd"
 vhdl work "fft_8_point.vhd"
 vhdl work "fft_tb.vhd"

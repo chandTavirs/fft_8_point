@@ -1,4 +1,6 @@
 vhdl work "fft_pkg.vhd"
+vhdl work "sub.vhd"
+vhdl work "add_16.vhd"
 vhdl work "radix_2_butterfly.vhd"
 vhdl work "fft_8_point.vhd"
 vhdl work "fft_8_tb.vhd"

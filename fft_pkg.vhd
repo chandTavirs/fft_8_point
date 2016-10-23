@@ -8,9 +8,11 @@
 --
 
 library IEEE;
+
 use IEEE.STD_LOGIC_1164.all;
 use ieee.std_logic_arith.all;
 use ieee.std_logic_signed.all;
+
 
 package fft_pkg is
 
@@ -36,6 +38,7 @@ re:std_logic_vector(15 downto 0);
 im:std_logic_vector(15 downto 0);
 end record;
 
+
 type com_array_128 is array (0 to 127) of complex;
 type com_array_64 is array (0 to 63) of complex; 
 type com_array_32 is array (0 to 31) of complex;
@@ -43,7 +46,9 @@ type com_array_16 is array (0 to 15) of complex;
 type com_array_8 is array (0 to 7) of complex;
 type com_array_4 is array (0 to 3) of complex;
 type com_array_2 is array (0 to 1) of complex;
-type nest_array is array (0 to 3) of std_logic_vector(31 downto 0);
+--type com_array_dec_4 is array(0 to 3) of complex_dec;
+
+--type nest_array is array (0 to 3) of std_logic_vector(31 downto 0);
 function add(n1,n2:complex) return complex;
 function sub(n1,n2:complex) return complex;
 function multiply(n1,n2:complex) return complex;

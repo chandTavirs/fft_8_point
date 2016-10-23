@@ -1,4 +1,8 @@
 vhdl isim_temp "fft_pkg.vhd"
+vhdl isim_temp "sub.vhd"
+vhdl isim_temp "add_16.vhd"
+vhdl isim_temp "../../../../../Xilinx/14.7/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_float_types_c.vhd"
 vhdl isim_temp "radix_2_butterfly.vhd"
+vhdl isim_temp "../../../../../Xilinx/14.7/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_pkg_c.vhd"
 vhdl isim_temp "fft_8_point.vhd"
 vhdl isim_temp "fft_tb.vhd"

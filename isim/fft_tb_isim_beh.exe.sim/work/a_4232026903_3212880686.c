@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Srivatsan/Desktop/4051/Project/add_16.vhd";
+static const char *ng0 = "C:/Users/Srivatsan/Desktop/4051/fft_8_point/add_16.vhd";
 extern char *IEEE_P_0774719531;
 extern char *WORK_P_1837030442;
 
@@ -85,7 +85,7 @@ LAB2:    xsi_set_current_line(49, ng0);
     t9 = *((char **)t8);
     t10 = (0 + 0U);
     t8 = (t9 + t10);
-    t11 = ((WORK_P_1837030442) + 2572);
+    t11 = ((WORK_P_1837030442) + 2392);
     t12 = xsi_record_get_element_type(t11, 0);
     t13 = (t12 + 44U);
     t14 = *((char **)t13);
@@ -93,7 +93,7 @@ LAB2:    xsi_set_current_line(49, ng0);
     t16 = *((char **)t15);
     t17 = (0 + 0U);
     t15 = (t16 + t17);
-    t18 = ((WORK_P_1837030442) + 2572);
+    t18 = ((WORK_P_1837030442) + 2392);
     t19 = xsi_record_get_element_type(t18, 0);
     t20 = (t19 + 44U);
     t21 = *((char **)t20);
@@ -117,7 +117,7 @@ LAB9:    t27 = (t0 + 1768);
     t3 = *((char **)t2);
     t10 = (0 + 16U);
     t2 = (t3 + t10);
-    t8 = ((WORK_P_1837030442) + 2572);
+    t8 = ((WORK_P_1837030442) + 2392);
     t9 = xsi_record_get_element_type(t8, 1);
     t11 = (t9 + 44U);
     t12 = *((char **)t11);
@@ -125,7 +125,7 @@ LAB9:    t27 = (t0 + 1768);
     t14 = *((char **)t13);
     t17 = (0 + 16U);
     t13 = (t14 + t17);
-    t15 = ((WORK_P_1837030442) + 2572);
+    t15 = ((WORK_P_1837030442) + 2392);
     t16 = xsi_record_get_element_type(t15, 1);
     t18 = (t16 + 44U);
     t19 = *((char **)t18);

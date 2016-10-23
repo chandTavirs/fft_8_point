@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Srivatsan/Desktop/4051/Project/fft_tb_isim_beh.exe" -prj "C:/Users/Srivatsan/Desktop/4051/Project/fft_tb_beh.prj" "work.fft_tb" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Srivatsan/Desktop/4051/fft_8_point/fft_tb_isim_beh.exe" -prj "C:/Users/Srivatsan/Desktop/4051/fft_8_point/fft_tb_beh.prj" "work.fft_tb" 

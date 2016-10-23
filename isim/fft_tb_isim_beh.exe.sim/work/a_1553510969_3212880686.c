@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Srivatsan/Desktop/4051/Project/radix_2_butterfly.vhd";
+static const char *ng0 = "C:/Users/Srivatsan/Desktop/4051/fft_8_point/radix_2_butterfly.vhd";
 
 
 

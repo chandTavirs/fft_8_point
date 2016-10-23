@@ -18,9 +18,12 @@
 --
 ----------------------------------------------------------------------------------
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+
+USE ieee.std_logic_1164.ALL;
+use work.fft_pkg.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_signed.all;
 use work.radix_2_butterfly;
-use work.fft_pkg.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -35,6 +38,9 @@ port(
 clk:in std_logic;
 reset:in std_logic;
 input_fft:in com_array_8;
+rfd:out std_logic;
+done:out std_logic;
+dv:out std_logic;
 output_fft:out com_array_8
 );
 end fft_8_point;
@@ -47,16 +53,17 @@ port(clk:in std_logic;
      out1,out2: out complex --outputs      
       );
 end component;
-constant w:com_array_4:=((x"0100",x"0000"),(x"00b5",x"00b5"),(x"0000",x"0100"),(x"00b5",x"00b5"));
---constant w:com_array_4:=((1.0,0.0),(0.7071,0.7071),(0.0,1.1),(-0.7071,0.7071));
+constant w:com_array_4:=((x"0100",x"0000"),(x"00b5",x"ff4b"),(x"0000",x"ff00"),(x"ff4b",x"ff4b"));
+--constant w:com_array_dec_4:=((1.0,0.0),(0.7071,-0.7071),(0.0,-1.0),(-0.7071,-0.7071));
+--signal w_slv: com_array_4;
 --signal g01,g11,g21,g31,h01,h11,h21,h31,g02,g12,g22,g32,h02,h12,h22,h32:complex:=(x"0000",x"0000");
 --signal g_stage1:com_array_4:=(((others=>'0'),(others=>'0')),((others=>'0'),(others=>'0')),((others=>'0'),(others=>'0')),((others=>'0'),(others=>'0')));
 --signal h_stage1:com_array_4:=(((others=>'0'),(others=>'0')),((others=>'0'),(others=>'0')),((others=>'0'),(others=>'0')),((others=>'0'),(others=>'0')));
 --signal g_stage2:com_array_4:=(((others=>'0'),(others=>'0')),((others=>'0'),(others=>'0')),((others=>'0'),(others=>'0')),((others=>'0'),(others=>'0')));
 --signal h_stage2:com_array_4:=(((others=>'0'),(others=>'0')),((others=>'0'),(others=>'0')),((others=>'0'),(others=>'0')),((others=>'0'),(others=>'0')));
 --signal mul_re,mul_im :nest_array;
-signal out_mults_1:com_array_4;
-signal out_mults_2:com_array_4;
+signal out_mults_1:com_array_4:=(others=>((others=>'0'),(others=>'0')));
+signal out_mults_2:com_array_4:=(others=>((others=>'0'),(others=>'0')));
 --signal butterfly_in1,butterfly_in2,butterfly_out1,butterfly_out2:complex:=((others=>'0'),(others=>'0'));
 --signal i:integer :=0;
 signal butterfly_stage11_in1,butterfly_stage11_in2,butterfly_stage11_out1,butterfly_stage11_out2:complex:=((others=>'0'),(others=>'0'));
@@ -67,6 +74,7 @@ signal butterfly_stage21_in1,butterfly_stage21_in2,butterfly_stage21_out1,butter
 signal butterfly_stage22_in1,butterfly_stage22_in2,butterfly_stage22_out1,butterfly_stage22_out2:complex:=((others=>'0'),(others=>'0'));
 signal butterfly_stage23_in1,butterfly_stage23_in2,butterfly_stage23_out1,butterfly_stage23_out2:complex:=((others=>'0'),(others=>'0'));
 signal butterfly_stage24_in1,butterfly_stage24_in2,butterfly_stage24_out1,butterfly_stage24_out2:complex:=((others=>'0'),(others=>'0'));
+
 begin
 
 --process(clk,reset)
@@ -128,13 +136,41 @@ butterfly_stage13_in2<=input_fft(6);
 butterfly_stage14_in1<=input_fft(3);
 butterfly_stage14_in2<=input_fft(7);
 
+rfd<='1';
 end if;
 
 end process;
 
+--process(clk)
+--begin
+--if(clk='1' and clk'event) then
+--twid_slv_re(0)<=to_sfixed(w(0).re,8,-7);
+--twid_slv_re(1)<=to_sfixed(w(1).re,8,-7);
+--twid_slv_re(2)<=to_sfixed(w(2).re,8,-7);
+--twid_slv_re(3)<=to_sfixed(w(3).re,8,-7);
+--twid_slv_im(0)<=to_sfixed(w(0).im,8,-7);
+--twid_slv_im(1)<=to_sfixed(w(1).im,8,-7);
+--twid_slv_im(2)<=to_sfixed(w(2).im,8,-7);
+--twid_slv_im(3)<=to_sfixed(w(3).im,8,-7);
+--end if;
+--end process;
+--
+--process(clk)
+--begin
+--if(clk='1' and clk'event) then
+--w_slv(0)<=(twid_slv_re(0),twid_slv_im(0));
+--w_slv(1)<=(twid_slv_re(1),twid_slv_im(1));
+--w_slv(2)<=(twid_slv_re(2),twid_slv_im(2));
+--w_slv(3)<=(twid_slv_re(3),twid_slv_im(3));
+--
+--end if;
+--end process;
+
+
 process(clk)
 begin
 if (clk='1' and clk'event) then
+
 out_mults_1(0)<=multiply(butterfly_stage11_out2,w(0));
 out_mults_1(1)<=multiply(butterfly_stage12_out2,w(1));
 out_mults_1(2)<=multiply(butterfly_stage13_out2,w(2));
@@ -202,8 +238,13 @@ out_mults_2(0)<=multiply(butterfly_stage21_out2,w(0));
 out_mults_2(1)<=multiply(butterfly_stage22_out2,w(2));
 out_mults_2(2)<=multiply(butterfly_stage23_out2,w(0));
 out_mults_2(3)<=multiply(butterfly_stage24_out2,w(2));
+
 end if;
 end process;
+
+--if(out_mults_2(0)/=x"0000") then
+--done<='1';
+--end if;
 
 process(clk)
 begin
@@ -216,8 +257,28 @@ output_fft(4)<=butterfly_stage22_out1;
 output_fft(5)<=butterfly_stage24_out1;
 output_fft(6)<=out_mults_2(1);
 output_fft(7)<=out_mults_2(3);
+
+end if;
+
+end process;
+process(clk)
+begin
+if(out_mults_2(0).re/=x"0000" and out_mults_2(0).im/=x"0000") then
+
+done<='1';
+
 end if;
 end process;
+process(clk)
+begin
+if(butterfly_stage21_out1 /= ((x"0000"),(x"0000"))) then
+
+dv<='1';
+end if;
+end process;
+--if(butterfly_stage21_out1/=x"0000") then
+--dv<='1';
+--end if;
 --process(clk,reset)
 --begin
 --if (reset='1')
